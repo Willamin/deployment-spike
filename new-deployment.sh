@@ -11,7 +11,7 @@ curl                                                                  \
   --header "Authorization: token $TOKEN"                              \
   --header "Content-Type: application/json"                           \
   --header "Accept: application/json"                                 \
-  --data '{"ref": "master","description": "create-deployment.sh"}'    \
+  --data '{"ref": "master"}'                                          \
   https://api.github.com/repos/$USER_OR_ORG/$REPO/deployments         \
   | jq '.id'                                                          \
 #######################################################################
