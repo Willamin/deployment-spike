@@ -13,5 +13,5 @@ curl                                                                  \
   --header "Accept: application/json"                                 \
   --data '{"ref": "master"}'                                          \
   https://api.github.com/repos/$USER_OR_ORG/$REPO/deployments         \
-  | jq '.id'                                                          \
+  # | jq '.id'                                                          \
 #######################################################################
